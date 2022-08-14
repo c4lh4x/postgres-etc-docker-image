@@ -1,8 +1,9 @@
+<img src="https://i.ibb.co/kqc3htP/logo.png" width="100">
 # postgres-etc 🐳 🐘 🐧
 
 ### A simple as sand alpine, postgres and postgis docker image that allows for easy customizations (or your money back) 🤘 Great for dev machines.
 
-<img src="https://i.ibb.co/kqc3htP/logo.png" width="100">
+
 
 ---
 
