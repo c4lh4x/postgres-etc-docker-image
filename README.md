@@ -2,6 +2,8 @@
 
 ### A simple as sand alpine, postgres and postgis docker image that allows for easy customizations (or your money back) 🤘 Great for dev machines.
 
+![logo](https://i.ibb.co/kqc3htP/logo.png)
+
 ---
 
 ## Important Info
