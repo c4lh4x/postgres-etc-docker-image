@@ -1,6 +1,6 @@
 # postgres-etc 🐳 🐘 🐧
 
-### A simple as sand alpine, postgres and postgis docker image that allow for easy customizations (or your money back) 🤘 Great for dev machines.
+### A simple as sand alpine, postgres and postgis docker image that allows for easy customizations (or your money back) 🤘 Great for dev machines.
 
 ---
 
