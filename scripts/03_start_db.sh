@@ -1,0 +1,1 @@
+su postgres -c "PGDATA=/var/lib/postgres/data postgres"

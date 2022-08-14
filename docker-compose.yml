@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  postgres:
+    build: .
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres:/var/lib/postgres/data:rw
+      - ./configs:/configs:ro
+      - ./mutations:/mutations:rw
