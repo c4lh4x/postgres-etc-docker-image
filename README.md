@@ -36,7 +36,7 @@ services:
 
 ## Options for `./pg_mutations` (`/mutations` in the container)
 
-Mutations are any action (`shell script ending in .sh`) you want to preform once the db has been initialized. A small example, installing [wal2json](https://github.com/eulerto/wal2json). We create a file called `00_install_wal2json.sh` in the `/pg_mutations` folder on our local machine. This is the contents:
+Mutations are any action (`shell script ending in .sh`) you want to perform once the db has been initialized. A small example, installing [wal2json](https://github.com/eulerto/wal2json). We create a file called `00_install_wal2json.sh` in the `/pg_mutations` folder on our local machine. This is the contents:
 
 ```bash
 cd /var/lib/postgresql/plugins
@@ -49,9 +49,9 @@ USE_PGXS=1 make
 sudo USE_PGXS=1 make install
 ```
 
-This would compile and install `wal2json` on our container. All mutations are run as the `postgres` user and have access to `root` via `sudo`. The `00_` is simply to allow for the scripts to run chronologically. The next script would be `01_install_foobar_extension.sh`
+This would compile and install `wal2json` in our container. All mutations are run as the `postgres` user and have access to `root` via `sudo`. The `00_` is simply to allow for the scripts to run chronologically. The next script would be `01_install_foobar_extension.sh`
 
-***Important**: Mutations run on every container run. If you don't need that, you will need to bash out some logic that circumnavigates that issue.*
+***Important**: Mutations run on every container run. If you don't need that, you will need to bash out some logic that circumnavigates that issue per mutation.*
 
 ## `./pg_data` (`/var/lib/postgresql/data` in the container)
 `./pg_data` is there for observation reasons, there should be no need to interact with it, however if you need to interact with the postgres instance, you have access to it.
