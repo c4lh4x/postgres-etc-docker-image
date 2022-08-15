@@ -33,7 +33,7 @@ services:
 
 ## Options for `./pg_configs` (`/configs` in the container)
 
-`./pg_configs` can contain these 3 files
+`./pg_configs` can contain these 3 files (All 3 are **optional**)
 - `init.sql`: an initial SQL script you would like run every time a new container is spun up
 - `pg_hba.conf`: replaces the initial `pg_hba.conf` and overwrites it on *every container run*
 - `postgresql.conf`: replaces the initial `postgresql.conf` and overwrites it on *every container run*
